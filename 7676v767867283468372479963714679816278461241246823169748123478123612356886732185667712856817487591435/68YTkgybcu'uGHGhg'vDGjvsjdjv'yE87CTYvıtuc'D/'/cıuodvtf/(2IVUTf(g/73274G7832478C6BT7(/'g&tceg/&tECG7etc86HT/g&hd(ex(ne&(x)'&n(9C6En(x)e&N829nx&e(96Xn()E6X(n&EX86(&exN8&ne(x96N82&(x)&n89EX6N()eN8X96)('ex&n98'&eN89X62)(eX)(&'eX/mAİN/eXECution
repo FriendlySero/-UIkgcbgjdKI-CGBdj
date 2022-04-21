@@ -1,0 +1,46 @@
+local Message ="A_1"
+	local A_1Text ="AJ Logger Accessing Clients.."
+	local A_2 ="All"
+
+	while true do
+		wait(1)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(0.5)
+		A_1Text ="Client ... E1 | Has been Un-Locked"
+		wait(3)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(.01)
+		A_1Text ="Client ... B1 | Has been Un-Locked"
+		wait(.01)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(.001)
+		A_1Text ="Client ... H6 | Has been Un-Locked"
+		wait(.001)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(.001)
+		A_1Text ="Client ... Y77 and X44 | Have been Un-Locked"
+		wait(.001)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(.001)
+		A_1Text ="Clients:Lounching.."
+		wait(15)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(.001)
+		A_1Text ="Lounch of E1 | Success"
+		wait(.001)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(.001)
+		A_1Text ="Lounch of B1 | Success"
+		wait(.001)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(.001)
+		A_1Text ="Lounch of H6 | Success"
+		wait(.001)
+		local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1Text, A_2)
+		wait(.001)
+		A_1Text ="Lounch of Y77 and X44 | Success"
+		wait(.001)
+		A_1Text:Destroy()
+		wait(0)
+		A_2:Destroy()
+	end
